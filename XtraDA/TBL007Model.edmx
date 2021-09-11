@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="XtraDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TBL007">
+          <Key>
+            <PropertyRef Name="CardGuide" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CardGuide" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CardCode" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="LatinName" Type="nvarchar" MaxLength="255" />
+          <Property Name="StatementName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Source" Type="nvarchar" MaxLength="255" />
+          <Property Name="StockProduct" Type="smallint" />
+          <Property Name="ListAlternatives" Type="bit" />
+          <Property Name="GroupGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DefaultCurrency" Type="uniqueidentifier" />
+          <Property Name="AccountID" Type="uniqueidentifier" />
+          <Property Name="Security" Type="tinyint" Nullable="false" />
+          <Property Name="Specification" Type="nvarchar(max)" />
+          <Property Name="ProductType" Type="tinyint" Nullable="false" />
+          <Property Name="ItemColor" Type="int" />
+          <Property Name="DefaultUnit" Type="smallint" />
+          <Property Name="NotActive" Type="bit" Nullable="false" />
+          <Property Name="NotTaxable" Type="bit" Nullable="false" />
+          <Property Name="NotDiscountable" Type="bit" Nullable="false" />
+          <Property Name="Custom" Type="nvarchar" MaxLength="255" />
+          <Property Name="Custom2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Custom3" Type="nvarchar" MaxLength="255" />
+          <Property Name="Custom4" Type="nvarchar" MaxLength="255" />
+          <Property Name="Custom5" Type="nvarchar" MaxLength="255" />
+          <Property Name="Unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="Unit2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Unit3" Type="nvarchar" MaxLength="255" />
+          <Property Name="Barcode" Type="nvarchar" MaxLength="255" />
+          <Property Name="Barcode2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Barcode3" Type="nvarchar" MaxLength="255" />
+          <Property Name="Weight" Type="float" Nullable="false" />
+          <Property Name="Value" Type="float" Nullable="false" />
+          <Property Name="Length" Type="float" Nullable="false" />
+          <Property Name="Width" Type="float" Nullable="false" />
+          <Property Name="Hieght" Type="float" Nullable="false" />
+          <Property Name="Weight2" Type="float" Nullable="false" />
+          <Property Name="Value2" Type="float" Nullable="false" />
+          <Property Name="Length2" Type="float" Nullable="false" />
+          <Property Name="Width2" Type="float" Nullable="false" />
+          <Property Name="Hieght2" Type="float" Nullable="false" />
+          <Property Name="Weight3" Type="float" Nullable="false" />
+          <Property Name="Value3" Type="float" Nullable="false" />
+          <Property Name="Length3" Type="float" Nullable="false" />
+          <Property Name="Width3" Type="float" Nullable="false" />
+          <Property Name="Hieght3" Type="float" Nullable="false" />
+          <Property Name="IsAssets" Type="bit" Nullable="false" />
+          <Property Name="DefaultExpiryDate" Type="datetime" />
+          <Property Name="Factor2" Type="float" />
+          <Property Name="Factor3" Type="float" />
+          <Property Name="TaxRatio" Type="float" />
+          <Property Name="MaxLimit" Type="float" />
+          <Property Name="MinLimit" Type="float" />
+          <Property Name="AgentPrice" Type="float" Nullable="false" />
+          <Property Name="AgentPrice2" Type="float" Nullable="false" />
+          <Property Name="AgentPrice3" Type="float" Nullable="false" />
+          <Property Name="AgentPriceTax" Type="float" Nullable="false" />
+          <Property Name="AgentPriceCurrency" Type="uniqueidentifier" />
+          <Property Name="WholePrice" Type="float" Nullable="false" />
+          <Property Name="WholePrice2" Type="float" Nullable="false" />
+          <Property Name="WholePrice3" Type="float" Nullable="false" />
+          <Property Name="WholePriceTax" Type="float" Nullable="false" />
+          <Property Name="WholePriceCurrency" Type="uniqueidentifier" />
+          <Property Name="EndUserPrice" Type="float" Nullable="false" />
+          <Property Name="EndUserPrice2" Type="float" Nullable="false" />
+          <Property Name="EndUserPrice3" Type="float" Nullable="false" />
+          <Property Name="EndUserPriceTax" Type="float" Nullable="false" />
+          <Property Name="EndUserPriceCurrency" Type="uniqueidentifier" />
+          <Property Name="Price5Item" Type="float" Nullable="false" />
+          <Property Name="Price5Item2" Type="float" Nullable="false" />
+          <Property Name="Price5Item3" Type="float" Nullable="false" />
+          <Property Name="Price5ItemTax" Type="float" Nullable="false" />
+          <Property Name="Price5ItemCurrency" Type="uniqueidentifier" />
+          <Property Name="Price6Item" Type="float" Nullable="false" />
+          <Property Name="Price6Item2" Type="float" Nullable="false" />
+          <Property Name="Price6Item3" Type="float" Nullable="false" />
+          <Property Name="Price6ItemTax" Type="float" Nullable="false" />
+          <Property Name="Price6ItemCurrency" Type="uniqueidentifier" />
+          <Property Name="Price7Item" Type="float" Nullable="false" />
+          <Property Name="Price7Item2" Type="float" Nullable="false" />
+          <Property Name="Price7Item3" Type="float" Nullable="false" />
+          <Property Name="Price7ItemTax" Type="float" Nullable="false" />
+          <Property Name="Price7ItemCurrency" Type="uniqueidentifier" />
+          <Property Name="StanderCost" Type="float" Nullable="false" />
+          <Property Name="StanderCost2" Type="float" Nullable="false" />
+          <Property Name="StanderCost3" Type="float" Nullable="false" />
+          <Property Name="StanderCostTax" Type="float" Nullable="false" />
+          <Property Name="StanderCostCurrency" Type="uniqueidentifier" />
+          <Property Name="CardOrder" Type="int" Nullable="false" />
+          <Property Name="Points" Type="float" Nullable="false" />
+          <Property Name="Points2" Type="float" Nullable="false" />
+          <Property Name="Points3" Type="float" Nullable="false" />
+          <Property Name="Category01" Type="uniqueidentifier" />
+          <Property Name="Category02" Type="uniqueidentifier" />
+          <Property Name="Category03" Type="uniqueidentifier" />
+          <Property Name="Category04" Type="uniqueidentifier" />
+          <Property Name="Category05" Type="uniqueidentifier" />
+          <Property Name="CardImage" Type="image" />
+          <Property Name="ByUser" Type="uniqueidentifier" />
+          <Property Name="ByGroup" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="TBL128">
+          <Key>
+            <PropertyRef Name="CardGuide" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CardGuide" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CardNumber" Type="int" Nullable="false" />
+          <Property Name="Security" Type="tinyint" Nullable="false" />
+          <Property Name="UnitName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="LatinName" Type="nvarchar" MaxLength="255" />
+          <Property Name="MainUnit" Type="tinyint" Nullable="false" />
+          <Property Name="Quantity" Type="float" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="AgentPrice" Type="float" Nullable="false" />
+          <Property Name="WholePrice" Type="float" Nullable="false" />
+          <Property Name="EndUserPrice" Type="float" Nullable="false" />
+          <Property Name="Price5Item" Type="float" Nullable="false" />
+          <Property Name="Price6Item" Type="float" Nullable="false" />
+          <Property Name="Price7Item" Type="float" Nullable="false" />
+          <Property Name="StanderCost" Type="float" Nullable="false" />
+          <Property Name="Barcode" Type="nvarchar" MaxLength="255" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="255" />
+          <Property Name="MainGuide" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_TBL128_TBL007">
+          <End Role="TBL007" Type="Self.TBL007" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TBL128" Type="Self.TBL128" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBL007">
+              <PropertyRef Name="CardGuide" />
+            </Principal>
+            <Dependent Role="TBL128">
+              <PropertyRef Name="MainGuide" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="XtraDBModelStoreContainer">
+          <EntitySet Name="TBL007" EntityType="Self.TBL007" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL128" EntityType="Self.TBL128" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TBL128_TBL007" Association="Self.FK_TBL128_TBL007">
+            <End Role="TBL007" EntitySet="TBL007" />
+            <End Role="TBL128" EntitySet="TBL128" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="XtraDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TBL007">
+          <Key>
+            <PropertyRef Name="CardGuide" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CardGuide" Type="Guid" Nullable="false" />
+          <Property Name="CardCode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LatinName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StatementName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Source" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StockProduct" Type="Int16" />
+          <Property Name="ListAlternatives" Type="Boolean" />
+          <Property Name="GroupGuid" Type="Guid" Nullable="false" />
+          <Property Name="DefaultCurrency" Type="Guid" />
+          <Property Name="AccountID" Type="Guid" />
+          <Property Name="Security" Type="Byte" Nullable="false" />
+          <Property Name="Specification" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProductType" Type="Byte" Nullable="false" />
+          <Property Name="ItemColor" Type="Int32" />
+          <Property Name="DefaultUnit" Type="Int16" />
+          <Property Name="NotActive" Type="Boolean" Nullable="false" />
+          <Property Name="NotTaxable" Type="Boolean" Nullable="false" />
+          <Property Name="NotDiscountable" Type="Boolean" Nullable="false" />
+          <Property Name="Custom" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Custom2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Custom3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Custom4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Custom5" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Unit2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Unit3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Barcode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Barcode2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Barcode3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Weight" Type="Double" Nullable="false" />
+          <Property Name="Value" Type="Double" Nullable="false" />
+          <Property Name="Length" Type="Double" Nullable="false" />
+          <Property Name="Width" Type="Double" Nullable="false" />
+          <Property Name="Hieght" Type="Double" Nullable="false" />
+          <Property Name="Weight2" Type="Double" Nullable="false" />
+          <Property Name="Value2" Type="Double" Nullable="false" />
+          <Property Name="Length2" Type="Double" Nullable="false" />
+          <Property Name="Width2" Type="Double" Nullable="false" />
+          <Property Name="Hieght2" Type="Double" Nullable="false" />
+          <Property Name="Weight3" Type="Double" Nullable="false" />
+          <Property Name="Value3" Type="Double" Nullable="false" />
+          <Property Name="Length3" Type="Double" Nullable="false" />
+          <Property Name="Width3" Type="Double" Nullable="false" />
+          <Property Name="Hieght3" Type="Double" Nullable="false" />
+          <Property Name="IsAssets" Type="Boolean" Nullable="false" />
+          <Property Name="DefaultExpiryDate" Type="DateTime" Precision="3" />
+          <Property Name="Factor2" Type="Double" />
+          <Property Name="Factor3" Type="Double" />
+          <Property Name="TaxRatio" Type="Double" />
+          <Property Name="MaxLimit" Type="Double" />
+          <Property Name="MinLimit" Type="Double" />
+          <Property Name="AgentPrice" Type="Double" Nullable="false" />
+          <Property Name="AgentPrice2" Type="Double" Nullable="false" />
+          <Property Name="AgentPrice3" Type="Double" Nullable="false" />
+          <Property Name="AgentPriceTax" Type="Double" Nullable="false" />
+          <Property Name="AgentPriceCurrency" Type="Guid" />
+          <Property Name="WholePrice" Type="Double" Nullable="false" />
+          <Property Name="WholePrice2" Type="Double" Nullable="false" />
+          <Property Name="WholePrice3" Type="Double" Nullable="false" />
+          <Property Name="WholePriceTax" Type="Double" Nullable="false" />
+          <Property Name="WholePriceCurrency" Type="Guid" />
+          <Property Name="EndUserPrice" Type="Double" Nullable="false" />
+          <Property Name="EndUserPrice2" Type="Double" Nullable="false" />
+          <Property Name="EndUserPrice3" Type="Double" Nullable="false" />
+          <Property Name="EndUserPriceTax" Type="Double" Nullable="false" />
+          <Property Name="EndUserPriceCurrency" Type="Guid" />
+          <Property Name="Price5Item" Type="Double" Nullable="false" />
+          <Property Name="Price5Item2" Type="Double" Nullable="false" />
+          <Property Name="Price5Item3" Type="Double" Nullable="false" />
+          <Property Name="Price5ItemTax" Type="Double" Nullable="false" />
+          <Property Name="Price5ItemCurrency" Type="Guid" />
+          <Property Name="Price6Item" Type="Double" Nullable="false" />
+          <Property Name="Price6Item2" Type="Double" Nullable="false" />
+          <Property Name="Price6Item3" Type="Double" Nullable="false" />
+          <Property Name="Price6ItemTax" Type="Double" Nullable="false" />
+          <Property Name="Price6ItemCurrency" Type="Guid" />
+          <Property Name="Price7Item" Type="Double" Nullable="false" />
+          <Property Name="Price7Item2" Type="Double" Nullable="false" />
+          <Property Name="Price7Item3" Type="Double" Nullable="false" />
+          <Property Name="Price7ItemTax" Type="Double" Nullable="false" />
+          <Property Name="Price7ItemCurrency" Type="Guid" />
+          <Property Name="StanderCost" Type="Double" Nullable="false" />
+          <Property Name="StanderCost2" Type="Double" Nullable="false" />
+          <Property Name="StanderCost3" Type="Double" Nullable="false" />
+          <Property Name="StanderCostTax" Type="Double" Nullable="false" />
+          <Property Name="StanderCostCurrency" Type="Guid" />
+          <Property Name="CardOrder" Type="Int32" Nullable="false" />
+          <Property Name="Points" Type="Double" Nullable="false" />
+          <Property Name="Points2" Type="Double" Nullable="false" />
+          <Property Name="Points3" Type="Double" Nullable="false" />
+          <Property Name="Category01" Type="Guid" />
+          <Property Name="Category02" Type="Guid" />
+          <Property Name="Category03" Type="Guid" />
+          <Property Name="Category04" Type="Guid" />
+          <Property Name="Category05" Type="Guid" />
+          <Property Name="CardImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ByUser" Type="Guid" />
+          <Property Name="ByGroup" Type="Guid" />
+          <NavigationProperty Name="TBL128" Relationship="Self.FK_TBL128_TBL007" FromRole="TBL007" ToRole="TBL128" />
+        </EntityType>
+        <EntityType Name="TBL128">
+          <Key>
+            <PropertyRef Name="CardGuide" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CardGuide" Type="Guid" Nullable="false" />
+          <Property Name="CardNumber" Type="Int32" Nullable="false" />
+          <Property Name="Security" Type="Byte" Nullable="false" />
+          <Property Name="UnitName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LatinName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MainUnit" Type="Byte" Nullable="false" />
+          <Property Name="Quantity" Type="Double" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="AgentPrice" Type="Double" Nullable="false" />
+          <Property Name="WholePrice" Type="Double" Nullable="false" />
+          <Property Name="EndUserPrice" Type="Double" Nullable="false" />
+          <Property Name="Price5Item" Type="Double" Nullable="false" />
+          <Property Name="Price6Item" Type="Double" Nullable="false" />
+          <Property Name="Price7Item" Type="Double" Nullable="false" />
+          <Property Name="StanderCost" Type="Double" Nullable="false" />
+          <Property Name="Barcode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Notes" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MainGuide" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="TBL007" Relationship="Self.FK_TBL128_TBL007" FromRole="TBL128" ToRole="TBL007" />
+        </EntityType>
+        <Association Name="FK_TBL128_TBL007">
+          <End Role="TBL007" Type="Self.TBL007" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TBL128" Type="Self.TBL128" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBL007">
+              <PropertyRef Name="CardGuide" />
+            </Principal>
+            <Dependent Role="TBL128">
+              <PropertyRef Name="MainGuide" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="XtrDB01_04_2021Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TBL007" EntityType="Self.TBL007" />
+          <EntitySet Name="TBL128" EntityType="Self.TBL128" />
+          <AssociationSet Name="FK_TBL128_TBL007" Association="Self.FK_TBL128_TBL007">
+            <End Role="TBL007" EntitySet="TBL007" />
+            <End Role="TBL128" EntitySet="TBL128" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="XtraDBModelStoreContainer" CdmEntityContainer="XtrDB01_04_2021Entities">
+          <EntitySetMapping Name="TBL007">
+            <EntityTypeMapping TypeName="XtraDBModel.TBL007">
+              <MappingFragment StoreEntitySet="TBL007">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CardGuide" ColumnName="CardGuide" />
+                <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="LatinName" ColumnName="LatinName" />
+                <ScalarProperty Name="StatementName" ColumnName="StatementName" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="StockProduct" ColumnName="StockProduct" />
+                <ScalarProperty Name="ListAlternatives" ColumnName="ListAlternatives" />
+                <ScalarProperty Name="GroupGuid" ColumnName="GroupGuid" />
+                <ScalarProperty Name="DefaultCurrency" ColumnName="DefaultCurrency" />
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="Security" ColumnName="Security" />
+                <ScalarProperty Name="Specification" ColumnName="Specification" />
+                <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+                <ScalarProperty Name="ItemColor" ColumnName="ItemColor" />
+                <ScalarProperty Name="DefaultUnit" ColumnName="DefaultUnit" />
+                <ScalarProperty Name="NotActive" ColumnName="NotActive" />
+                <ScalarProperty Name="NotTaxable" ColumnName="NotTaxable" />
+                <ScalarProperty Name="NotDiscountable" ColumnName="NotDiscountable" />
+                <ScalarProperty Name="Custom" ColumnName="Custom" />
+                <ScalarProperty Name="Custom2" ColumnName="Custom2" />
+                <ScalarProperty Name="Custom3" ColumnName="Custom3" />
+                <ScalarProperty Name="Custom4" ColumnName="Custom4" />
+                <ScalarProperty Name="Custom5" ColumnName="Custom5" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+                <ScalarProperty Name="Unit3" ColumnName="Unit3" />
+                <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+                <ScalarProperty Name="Barcode2" ColumnName="Barcode2" />
+                <ScalarProperty Name="Barcode3" ColumnName="Barcode3" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Hieght" ColumnName="Hieght" />
+                <ScalarProperty Name="Weight2" ColumnName="Weight2" />
+                <ScalarProperty Name="Value2" ColumnName="Value2" />
+                <ScalarProperty Name="Length2" ColumnName="Length2" />
+                <ScalarProperty Name="Width2" ColumnName="Width2" />
+                <ScalarProperty Name="Hieght2" ColumnName="Hieght2" />
+                <ScalarProperty Name="Weight3" ColumnName="Weight3" />
+                <ScalarProperty Name="Value3" ColumnName="Value3" />
+                <ScalarProperty Name="Length3" ColumnName="Length3" />
+                <ScalarProperty Name="Width3" ColumnName="Width3" />
+                <ScalarProperty Name="Hieght3" ColumnName="Hieght3" />
+                <ScalarProperty Name="IsAssets" ColumnName="IsAssets" />
+                <ScalarProperty Name="DefaultExpiryDate" ColumnName="DefaultExpiryDate" />
+                <ScalarProperty Name="Factor2" ColumnName="Factor2" />
+                <ScalarProperty Name="Factor3" ColumnName="Factor3" />
+                <ScalarProperty Name="TaxRatio" ColumnName="TaxRatio" />
+                <ScalarProperty Name="MaxLimit" ColumnName="MaxLimit" />
+                <ScalarProperty Name="MinLimit" ColumnName="MinLimit" />
+                <ScalarProperty Name="AgentPrice" ColumnName="AgentPrice" />
+                <ScalarProperty Name="AgentPrice2" ColumnName="AgentPrice2" />
+                <ScalarProperty Name="AgentPrice3" ColumnName="AgentPrice3" />
+                <ScalarProperty Name="AgentPriceTax" ColumnName="AgentPriceTax" />
+                <ScalarProperty Name="AgentPriceCurrency" ColumnName="AgentPriceCurrency" />
+                <ScalarProperty Name="WholePrice" ColumnName="WholePrice" />
+                <ScalarProperty Name="WholePrice2" ColumnName="WholePrice2" />
+                <ScalarProperty Name="WholePrice3" ColumnName="WholePrice3" />
+                <ScalarProperty Name="WholePriceTax" ColumnName="WholePriceTax" />
+                <ScalarProperty Name="WholePriceCurrency" ColumnName="WholePriceCurrency" />
+                <ScalarProperty Name="EndUserPrice" ColumnName="EndUserPrice" />
+                <ScalarProperty Name="EndUserPrice2" ColumnName="EndUserPrice2" />
+                <ScalarProperty Name="EndUserPrice3" ColumnName="EndUserPrice3" />
+                <ScalarProperty Name="EndUserPriceTax" ColumnName="EndUserPriceTax" />
+                <ScalarProperty Name="EndUserPriceCurrency" ColumnName="EndUserPriceCurrency" />
+                <ScalarProperty Name="Price5Item" ColumnName="Price5Item" />
+                <ScalarProperty Name="Price5Item2" ColumnName="Price5Item2" />
+                <ScalarProperty Name="Price5Item3" ColumnName="Price5Item3" />
+                <ScalarProperty Name="Price5ItemTax" ColumnName="Price5ItemTax" />
+                <ScalarProperty Name="Price5ItemCurrency" ColumnName="Price5ItemCurrency" />
+                <ScalarProperty Name="Price6Item" ColumnName="Price6Item" />
+                <ScalarProperty Name="Price6Item2" ColumnName="Price6Item2" />
+                <ScalarProperty Name="Price6Item3" ColumnName="Price6Item3" />
+                <ScalarProperty Name="Price6ItemTax" ColumnName="Price6ItemTax" />
+                <ScalarProperty Name="Price6ItemCurrency" ColumnName="Price6ItemCurrency" />
+                <ScalarProperty Name="Price7Item" ColumnName="Price7Item" />
+                <ScalarProperty Name="Price7Item2" ColumnName="Price7Item2" />
+                <ScalarProperty Name="Price7Item3" ColumnName="Price7Item3" />
+                <ScalarProperty Name="Price7ItemTax" ColumnName="Price7ItemTax" />
+                <ScalarProperty Name="Price7ItemCurrency" ColumnName="Price7ItemCurrency" />
+                <ScalarProperty Name="StanderCost" ColumnName="StanderCost" />
+                <ScalarProperty Name="StanderCost2" ColumnName="StanderCost2" />
+                <ScalarProperty Name="StanderCost3" ColumnName="StanderCost3" />
+                <ScalarProperty Name="StanderCostTax" ColumnName="StanderCostTax" />
+                <ScalarProperty Name="StanderCostCurrency" ColumnName="StanderCostCurrency" />
+                <ScalarProperty Name="CardOrder" ColumnName="CardOrder" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+                <ScalarProperty Name="Points2" ColumnName="Points2" />
+                <ScalarProperty Name="Points3" ColumnName="Points3" />
+                <ScalarProperty Name="Category01" ColumnName="Category01" />
+                <ScalarProperty Name="Category02" ColumnName="Category02" />
+                <ScalarProperty Name="Category03" ColumnName="Category03" />
+                <ScalarProperty Name="Category04" ColumnName="Category04" />
+                <ScalarProperty Name="Category05" ColumnName="Category05" />
+                <ScalarProperty Name="CardImage" ColumnName="CardImage" />
+                <ScalarProperty Name="ByUser" ColumnName="ByUser" />
+                <ScalarProperty Name="ByGroup" ColumnName="ByGroup" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL128">
+            <EntityTypeMapping TypeName="XtraDBModel.TBL128">
+              <MappingFragment StoreEntitySet="TBL128">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CardGuide" ColumnName="CardGuide" />
+                <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+                <ScalarProperty Name="Security" ColumnName="Security" />
+                <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+                <ScalarProperty Name="LatinName" ColumnName="LatinName" />
+                <ScalarProperty Name="MainUnit" ColumnName="MainUnit" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="AgentPrice" ColumnName="AgentPrice" />
+                <ScalarProperty Name="WholePrice" ColumnName="WholePrice" />
+                <ScalarProperty Name="EndUserPrice" ColumnName="EndUserPrice" />
+                <ScalarProperty Name="Price5Item" ColumnName="Price5Item" />
+                <ScalarProperty Name="Price6Item" ColumnName="Price6Item" />
+                <ScalarProperty Name="Price7Item" ColumnName="Price7Item" />
+                <ScalarProperty Name="StanderCost" ColumnName="StanderCost" />
+                <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="MainGuide" ColumnName="MainGuide" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
